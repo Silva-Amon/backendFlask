@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    transition: all 0.3s;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    font-family: 'Roboto', sans-serif;
+}
+
+form h1 {
+    color: #FFF;
+    animation-name: moveTitle;
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 200px;
+    margin: 24.9vh auto;
+    background-color: rgb(70, 70, 70);
+    border-radius: 15px;
+    padding: 0 50px 50px 50px;
+}
+
+form label {
+    color: #FFF;
+}
+
+form input {
+    border: none;
+    border-color: rgba(128, 128, 128, 0.308);
+    border-radius: 5px;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    background-color: rgba(226, 226, 226, 0.904);
+    transition: box-shadow 0.3s;
+    outline-width: 0;
+}
+
+form input:focus {
+    box-shadow: 1px 1px 10px cornflowerblue;
+}
+
+form button {
+    margin-top: 15px;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 162, 255);
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(2, 140, 219);
+}
+
+@keyframes moveTitle {
+    from {
+        margin: initial
+    }
+    to {
+        margin: -15px 0px 15px -40px;
+        font-family: 1.2rem;
+    }
+}
