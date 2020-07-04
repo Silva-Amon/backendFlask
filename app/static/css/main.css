@@ -32,6 +32,14 @@ form {
     padding: 0 50px 50px 50px;
 }
 
+form p{
+    background-color:rgba(204, 76, 76, 0.678);
+    color:#FFF;
+    padding:10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 form label {
     color: #FFF;
 }
